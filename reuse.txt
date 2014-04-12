@@ -1,0 +1,32 @@
+REUSE.TXT- Explains the process for configuring Generic_3D_3 to be used for
+other programs.
+
+
+
+1. Open Generic2D.sln file.
+2. Click Project, Properties...
+3. Change the following configuration properties.
+  a. General - Output Directory:   .
+  b. Linker - General - Output File:  $(OutDir)/Generic2D.exe
+  c. Linker - Command Line - Additional Options: 
+	d3d9.lib
+	d3dx9.lib
+	winmm.lib
+	fmod.lib
+  d. Linker - Debugging - Generate Program Database File 
+  e. Click Okay.
+  
+4. Right click Project name inside Solution. Click rename. Change Generic2D.
+5. Right click Solution name. Click rename. Change Generic2D.
+5a.If resource file...remove.  Rename outside of VS and add existing item.
+6. Click on Build, Rebuild Solution.  (Should get '1 succeeded' after rebuilding all.
+7. Close visual studio.
+8. Open .sln file with text editor. Replace all references to Generic2D to new filename. Save file.
+9. Rename Generic2D.vbproj to new filename.vbproj.
+10. Open .sln file and recompile (Ctrl + F5)
+
+
+Notes:
+$(InitDir) refers to Debug
+$(OutDir) refers to Main folder containing this project
+

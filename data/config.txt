@@ -1,0 +1,33 @@
+//Cindy and the Cookie Stealing Ogre
+//config.txt - Written by Chuck Bolin
+//describes certain behavior regarding game
+
+//window and screen information
+screen_left = -1
+screen_top = -1
+screen_width = 1024
+screen_height = 768
+
+full_screen = 0
+
+//display debug info
+display_debug_info = 0
+
+//sound controls
+play_music = 1
+
+//level information
+current_level = 1
+max_levels = 3
+level_file1 = level1.dat
+level_file2 = level2.dat
+level_file3 = level3.dat
+
+
+
+
+
+
+
+
+
